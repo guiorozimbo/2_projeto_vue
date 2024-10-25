@@ -10,16 +10,24 @@ export default {
     return {
       nome: 'Ainda não sei'
     }
+   
   },
     created() {
    setTimeout(() => {
     this.nome = 'Guilherme'
    },1000);
+   this.lifeCycle()
  },
     mounted() {
       setTimeout(() => {
          this.nome = 'Rafael'
       },2000);
+      this.lifeCycle()
+    },
+    methods: {
+      lifeCycle() {
+        console.log('LifeCycle')
+      }
     }
 }
 </script>
