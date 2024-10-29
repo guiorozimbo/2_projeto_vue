@@ -1,15 +1,17 @@
 <template>
   <div>
+    <Header />
     <FirstComponent/>
-    <p>O dado de app é: {{ message }}</p>
+    <p class="parag-pai">O dado de app é: {{ message }}</p>
     <LifeCycle/>
     <Pessoa/>
-    
+
   </div>
-  
+
 </template>
 
 <script>
+import Header from './components/Header.vue'
 import FirstComponent from './components/FirstComponent.vue'
 import Info from './components/Info.vue';
 import LifeCycle from './components/LifeCycle.vue';
@@ -21,7 +23,8 @@ export default {
   components: { 
     FirstComponent,
     LifeCycle,
-    Pessoa
+    Pessoa,
+    Header
   },
   data(){
     return {
@@ -30,3 +33,21 @@ export default {
   }
 }
 </script>
+<style>
+body{
+  background-color: #333;
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+}
+a{
+  color: #675367;
+  text-decoration: none;
+}
+.teste{
+  background-color: black;
+}
+
+</style>
