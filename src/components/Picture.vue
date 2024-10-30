@@ -1,8 +1,13 @@
 <template>
-  <img :src="image" :alt="descricao" >
+  <div>
+    <img :src="image" :alt="descricao" >
+    <reutilizacao/>
+  </div>
 </template>
 <script>
+import Reutilizacao from './Reutilizacao.vue'
 export default {
+  components: { Reutilizacao },
   name: 'Image',
   data () {
     return {

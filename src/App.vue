@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Header from './components/Header.vue '
+import Header from './components/Header.vue'
 import FirstComponent from './components/FirstComponent.vue'
 import Info from './components/Info.vue';
 import LifeCycle from './components/LifeCycle.vue';
