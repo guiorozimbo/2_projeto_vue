@@ -2,7 +2,7 @@
   <div>
     <h2>Esta é a descrição da pessoa: {{ nome }}</h2>
 
-  <Info />
+  <Info :email="email" :esta_trabalhando=true />
   <Form/>
   
   </div>
@@ -18,10 +18,10 @@ export default {
     Info,
     Form
   },
-  
   data(){
     return {
-      nome: 'José',
+      nome: 'Guilherme',
+      email: 'guilherme@gmial.com'
      
     }
   }
